@@ -8,52 +8,61 @@
   </head>
 
   <body class="body">
-    <div class="aaa">
+    <header class="header">
       <img src="./eisenhower-matrix.jpg" class="logo__img" alt="
       Eisenhower Matrix with Todoist">
       <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="centered-main-page-element">
-      <p id="topSectionForAddingElementToList">
-        <label for="new-task" class="label label__add">Add Item</label>
+    </header>
+
+    <main class="main">
+      <section class="section">
+        <h3 class="section__title-add">
+          <label for="new-task" class="label label__add">Add Item</label>
+        </h3>
         <div class="task-row-wrapper">
           <input id="new-task" class="input-text task" type="text">
           <button class="button">Add</button>
         </div>
-      </p>
-      <h3 class="title-block">Todo</h3>
-      <ul id="incompleteTasks" class="list">
-        <li class="list__item">
-          <input type="checkbox" class="input-checkbox">
-          <label class="item__label task">Pay Bills</label>
-          <input type="text" class="input-text task">
-          <button class="button button__edit">Edit</button>
-          <button class="button button__delete">
-            <img src="./remove.svg" class="button__img_remove" alt="Remove button">
-          </button>
-        </li>
-        <li class="list__item editMode">
-          <input type="checkbox" class="input-checkbox">
-          <label class="item__label task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="input-text task">
-          <button class="button button__edit">Save</button>
-          <button class="button button__delete">
-            <img src="./remove.svg" class="button__img_remove" alt="Remove button">
-          </button></li>
-      </ul>
-      <h3 class="title-block">Completed</h3>
-      <ul id="completed-tasks" class="list">
-        <li class="list__item">
-          <input type="checkbox"  class="input-checkbox" checked>
-          <label class="item__label task">See the Doctor</label>
-          <input type="text" class="input-text task">
-          <button class="button button__edit">Edit</button>
-          <button class="button button__delete">
-            <img src="./remove.svg" class="button__img_remove" alt="Remove button">
-          </button>
-        </li>
-      </ul>
-    </div>
+      </section>
+
+      <section class="section">
+        <h3 class="title-block">Todo</h3>
+        <ul id="incompleteTasks" class="list">
+          <li class="list__item">
+            <input type="checkbox" class="input-checkbox">
+            <label class="item__label task">Pay Bills</label>
+            <input type="text" class="input-text task">
+            <button class="button button__edit">Edit</button>
+            <button class="button button__delete">
+              <img src="./remove.svg" class="button__img_remove" alt="Remove button">
+            </button>
+          </li>
+          <li class="list__item editMode">
+            <input type="checkbox" class="input-checkbox">
+            <label class="item__label task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="input-text task">
+            <button class="button button__edit">Save</button>
+            <button class="button button__delete">
+              <img src="./remove.svg" class="button__img_remove" alt="Remove button">
+            </button></li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h3 class="title-block">Completed</h3>
+        <ul id="completed-tasks" class="list">
+          <li class="list__item">
+            <input type="checkbox"  class="input-checkbox" checked>
+            <label class="item__label task">See the Doctor</label>
+            <input type="text" class="input-text task">
+            <button class="button button__edit">Edit</button>
+            <button class="button button__delete">
+              <img src="./remove.svg" class="button__img_remove" alt="Remove button">
+            </button>
+          </li>
+        </ul>
+      </section>        
+    </main>    
     <script src="app.js"></script>
   </body>
   
